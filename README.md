@@ -16,23 +16,19 @@
 
 - Copy the connection string
 
-- In **.env** file, past your connection string, and replace the necessary credentials with your **Admin Username**, **Password**, and **DB name**
-
-- Then, replace the **<openai-service-name>**, **<azure_openai_api_key>** with the respective info from **[Azure OpenAI](https://oai.azure.com) -> Settings -> Resources**
-
-  ```Bash
-  MONGODB_URI=mongodb+srv://<user>:<password>@<db>.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
-  AOAI_ENDPOINT=https://<openai-service-name>.openai.azure.com/
-  AOAI_KEY=<azure_openai_api_key>
-  ```
-
 - Now, in **Azure OpenAI Studio -> Deployments** there should be at least two deployments, one for embedding using models like **text-embedding-ada-002**, and another for chat completion using models like **gpt-35-turbo-16k**, Record the **Deployment Name** of each model
 
-- Go to **index.js** and replace the **embeddings** and **completions** with the respective names recorded:
+- Go to **.env** and populate all the credentials:
 
   ```Bash
-  const embeddingsDeploymentName = "<embeddings>";
-  const completionsDeploymentName = "<completions>";
+  ADMIN_USERNAME=<Azure Cosmos DB Username>
+  PASSWORD=<Azure Cosmos DB Password>
+  DB=<Azure Cosmos DB Name>
+  AZURE_OPENAI_API_INSTANCE_NAME=<OpenAI Service Name>
+  AZURE_OPENAI_API_KEY=<azure_openai_api_key>
+  AZURE_OPENAI_API_DEPLOYMENT_NAME=<completions>
+  AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME=<embeddings>
+  AZURE_OPENAI_API_VERSION=2023-09-01-preview
   ```
 
 ### Sometimes you need to set up Network information to connect
@@ -43,7 +39,7 @@
 
 - In **Public access** select **Add Current Client IP Address**
 
-If you have any questions, please consult the [following question on stackoverflow](https://stackoverflow.com/questions/78373503/mongoserverselectionerror-server-selection-timed-out-after-30000-ms) and review the last answer.
+If you have any questions, please consult the [following question on Stackoverflow](https://stackoverflow.com/questions/78373503/mongoserverselectionerror-server-selection-timed-out-after-30000-ms) and review the last answer.
 
 ## Run
 
@@ -66,6 +62,8 @@ If you have any questions, please consult the [following question on stackoverfl
 - **setup.js** contains all the completed code from lab 7 and lab 8, enables connections to Cosmos DB, and loads the necessary data.
 
 - **vectorSearch.js** contains all the completed code from lab 9, You can follow the 4 steps (by uncommenting the code to reproduce).
+
+- **LangChainSearch.js** contains all the completed code from lab 10, You can follow the 3 steps (by uncommenting the code to reproduce).
 
 
 ## Set Up MSLearn OpenAI
