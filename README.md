@@ -1,6 +1,6 @@
 # Azure-OpenAI-Tutorials
 
-## Steps to Run
+## Setup
 
 - go to **Azure Service -> Azure Cosmos DB**
 
@@ -18,8 +18,12 @@
 
 - In **.env** file, past your connection string, and replace the necessary credentials with your **Admin Username**, **Password**, and **DB name**
 
+- Then, replace the **<openai-service-name>**, **<azure_openai_api_key>** with the respective info from **[Azure OpenAI](https://oai.azure.com) -> Settings -> Resources**
+
   ```Bash
   MONGODB_URI=mongodb+srv://<user>:<password>@<db>.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
+  AOAI_ENDPOINT=https://<openai-service-name>-openai.openai.azure.com/
+  AOAI_KEY=<azure_openai_api_key>
   ```
 
 ### Sometimes you need to set up Network information to connect
