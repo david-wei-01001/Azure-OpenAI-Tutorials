@@ -1,0 +1,36 @@
+# Dependency directories
+node_modules/
+venv/
+packages/
+
+# Compiled code
+*.o
+*.pyc
+*.class
+
+# Build output directories
+dist/
+build/
+out/
+
+# IDE and editor configuration
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating system generated files
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files and databases
+*.log
+*.sql
+db.sqlite3
+
+# Temporary files
+*.tmp
+*.bak
+*~
