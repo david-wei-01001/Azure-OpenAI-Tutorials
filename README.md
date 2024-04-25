@@ -36,9 +36,31 @@
 
 If you have any questions, please consult the [following question on stackoverflow](https://stackoverflow.com/questions/78373503/mongoserverselectionerror-server-selection-timed-out-after-30000-ms) and review the last answer.
 
+## Run
+
+### Node.js
+
+- Open the **first_cosmos_db_application/NodeJS** in VSCode
+
+- Open terminal
+
+- Execute:
+  ```Bash
+  npm install
+  node setup.js
+  npm start
+  ```
+
+## Files
+
+- **setup.js** contains all the completed code from lab 7 and lab 8, enables connections to Cosmos DB, and loads the necessary data.
+
 
 ## Set Up MSLearn OpenAI
 
 - Labfiles contains all the lab codes to play with
 
 - Instructions provide the detailed instructions of all exercises to perform.
+
+
+
