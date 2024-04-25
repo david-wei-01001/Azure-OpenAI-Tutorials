@@ -57,12 +57,15 @@ If you have any questions, please consult the [following question on stackoverfl
   ```Bash
   npm install
   node setup.js
+  node vectorSearch.js
   npm start
   ```
 
 ## Files
 
 - **setup.js** contains all the completed code from lab 7 and lab 8, enables connections to Cosmos DB, and loads the necessary data.
+
+- **vectorSearch.js** contains all the completed code from lab 9, You can follow the 4 steps (by uncommenting the code to reproduce).
 
 
 ## Set Up MSLearn OpenAI
