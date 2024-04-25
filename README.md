@@ -18,6 +18,10 @@
 
 - In **.env** file, past your connection string, and replace the necessary credentials with your **Admin Username**, **Password**, and **DB name**
 
+  ```Bash
+  MONGODB_URI=mongodb+srv://<user>:<password>@<db>.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
+  ```
+
 ### Sometimes you need to set up Network information to connect
 
 - go to your newly created resource, and find **Overview** on the left pannel
