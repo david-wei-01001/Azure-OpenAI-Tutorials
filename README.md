@@ -34,3 +34,7 @@ If you have any questions, please consult the [following question on stackoverfl
 
 
 ## Set Up MSLearn OpenAI
+
+- Labfiles contains all the lab codes to play with
+
+- Instructions provide the detailed instructions of all exercises to perform.
