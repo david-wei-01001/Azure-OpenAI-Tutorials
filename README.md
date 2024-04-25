@@ -56,7 +56,11 @@ If you have any questions, please consult the [following question on Stackoverfl
   node vectorSearch.js
   npm start
   ```
-
+- To run any intermediate file, simply do:
+  ```Bash
+  node <filename>.js
+  ```
+  
 ## Files
 
 - **setup.js** contains all the completed code from lab 7 and lab 8, enables connections to Cosmos DB, and loads the necessary data.
