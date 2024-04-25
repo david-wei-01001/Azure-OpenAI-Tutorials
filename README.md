@@ -31,3 +31,6 @@
 - In **Public access** select **Add Current Client IP Address**
 
 If you have any questions, please consult the [following question on stackoverflow](https://stackoverflow.com/questions/78373503/mongoserverselectionerror-server-selection-timed-out-after-30000-ms) and review the last answer.
+
+
+## Set Up MSLearn OpenAI
