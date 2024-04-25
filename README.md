@@ -22,7 +22,7 @@
 
   ```Bash
   MONGODB_URI=mongodb+srv://<user>:<password>@<db>.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
-  AOAI_ENDPOINT=https://<openai-service-name>-openai.openai.azure.com/
+  AOAI_ENDPOINT=https://<openai-service-name>.openai.azure.com/
   AOAI_KEY=<azure_openai_api_key>
   ```
 
