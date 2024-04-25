@@ -26,6 +26,15 @@
   AOAI_KEY=<azure_openai_api_key>
   ```
 
+- Now, in **Azure OpenAI Studio -> Deployments** there should be at least two deployments, one for embedding using models like **text-embedding-ada-002**, and another for chat completion using models like **gpt-35-turbo-16k**, Record the **Deployment Name** of each model
+
+- Go to **index.js** and replace the **embeddings** and **completions** with the respective names recorded:
+
+  ```Bash
+  const embeddingsDeploymentName = "<embeddings>";
+  const completionsDeploymentName = "<completions>";
+  ```
+
 ### Sometimes you need to set up Network information to connect
 
 - go to your newly created resource, and find **Overview** on the left pannel
